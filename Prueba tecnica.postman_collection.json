@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "617d9d71-f3b8-4b5d-b75b-94fdfa63293f",
+		"name": "Prueba tecnica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13874216"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/cuentas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cuentas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/usuarios",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/usuarios",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuenta",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/cuenta/2134-1242-1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuenta",
+						"2134-1242-1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/usuario",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/usuario/10",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuario",
+						"10"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCuenta\":\"3334-1242-3256\",\r\n    \"saldo\": \"0\",\r\n    \"idUsuario\": \"12\",\r\n    \"estado\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/usuarios/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idUsuario\":\"12\",\r\n    \"cedula\": \"150298\",\r\n    \"nombre\": \"Maria\",\r\n    \"apellido\": \"Leon\",\r\n    \"direccion\":\"Av 10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuarios/create",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCuenta\":\"2134-1242-1231\",\r\n    \"saldo\": \"0\",\r\n    \"idUsuario\": \"101\",\r\n    \"estado\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/usuarios/update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idUsuario\":\"10\",\r\n    \"cedula\": \"102938\",\r\n    \"nombre\": \"Julian\",\r\n    \"apellido\": \"Ortis\",\r\n    \"direccion\":\"cl 10\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuarios/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/usuarios/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/usuarios/delete/2134-1242-1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"usuarios",
+						"delete",
+						"2134-1242-1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/cuentas/delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCuenta\":\"2134-1242-1231\",\r\n    \"saldo\": \"0\",\r\n    \"idUsuario\": \"101\",\r\n    \"estado\": \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/cuentas/delete/2134-1242-1234",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"cuentas",
+						"delete",
+						"2134-1242-1234"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/transaccion",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": {\r\n    \"cedula\": \"150298\",\r\n    \"nombre\": \"Maria\",\r\n    \"apellido\": \"Leon\"\r\n  },\r\n  \"cuenta\": \"2134-1242-3256\",\r\n  \"tipo\": \"3\",\r\n  \"valor\": \"500\",\r\n  \"origen\": \"3334-1242-3256\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/transaccion",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"transaccion"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ba8jztabje.execute-api.us-east-1.amazonaws.com/sandbox/proceso/transaccion/interbancaria",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"usuario\": {\r\n    \"cedula\": \"102938\",\r\n    \"nombre\": \"Julian\",\r\n    \"apellido\": \"Ortis\"\r\n  },\r\n  \"cuenta\": \"3334-1242-3256\",\r\n  \"tipo\": \"3\",\r\n  \"valor\": \"500\",\r\n  \"origen\": \"2134-1242-3256\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ba8jztabje.execute-api.us-east-1.amazonaws.com/sandbox/proceso/transaccion/interbancaria",
+					"protocol": "https",
+					"host": [
+						"ba8jztabje",
+						"execute-api",
+						"us-east-1",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"sandbox",
+						"proceso",
+						"transaccion",
+						"interbancaria"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
